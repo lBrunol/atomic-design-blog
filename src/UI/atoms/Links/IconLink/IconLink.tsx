@@ -1,13 +1,20 @@
+import { ReactNode } from 'react'
+import * as S from './Styles'
+
 type Props = {
-  icon: string
+  href: string
+  title: string
+  target: string
+  rel: string
+  children: string | ReactNode
 }
 
-const IconLink = ({ icon }: Props) => {
-  return <div>{icon}</div>
-}
-
-IconLink.defaultProps = {
-  icon: 'oi'
+const IconLink = ({ href, title, target, rel, children }: Props) => {
+  return (
+    <S.A href={href} title={title} target={target} rel={rel}>
+      {children}
+    </S.A>
+  )
 }
 
 export default IconLink

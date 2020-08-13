@@ -11,5 +11,11 @@ export const A = styled.a`
   transition: color 0.25s ease 0s;
 
   &:hover {
+    color: var(--highlightColor);
+  }
+  svg {
+    display: block;
+    height: 2rem;
+    width: 2rem;
   }
 `
