@@ -4,6 +4,16 @@ import { ThemeType, ThemeDefault } from './theme'
 
 const GlobalStyles = createGlobalStyle`
   ${({ theme }: Props) => css`
+    :root {
+      --primary-color: ${variables.colors.primaryColor[theme.type]};
+      --bg: ${variables.colors.bg[theme.type]};
+      --bgSolid: ${variables.colors.bgSolid[theme.type]};
+      --bgSecondary: ${variables.colors.bgSecondary[theme.type]};
+      --borderColor: ${variables.colors.borderColor[theme.type]};
+      --highlightColor: ${variables.colors.highlightColor[theme.type]};
+      --secondaryColor: ${variables.colors.secondaryColor[theme.type]};
+      --boxShadow: ${variables.colors.boxShadow[theme.type]};
+    }
     * {
       margin: 0;
       padding: 0;
@@ -16,9 +26,12 @@ const GlobalStyles = createGlobalStyle`
     body {
       font-family: 'Roboto';
       font-size: 2rem;
-      background-color: ${variables.siteBackground[theme.type]};
+      background-color: var(--bg);
       will-change: background-color;
       transition: background-color 0.25s ease 0s;
+      color: var(--primary-color);
+      overflow-x: hidden;
+      text-rendering: optimizelegibility;
     }
     a {
       text-decoration: none;
@@ -28,7 +41,20 @@ const GlobalStyles = createGlobalStyle`
       list-style: none;
     }
     h1 {
-      color: ${variables.titleColor[theme.type]};
+      color: var(--primary-color);
+    }
+    p {
+      &:not(last-child) {
+        margin-bottom: 2.4rem;
+      }
+    }
+    article {
+      &:not(last-child) {
+        margin-bottom: 3.2rem;
+      }
+      &:not(first-child) {
+        margin-top: 3.2rem;
+      }
     }
   `}
 `
