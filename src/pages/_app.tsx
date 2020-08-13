@@ -18,8 +18,6 @@ function App({ Component, pageProps }: AppProps) {
       </Head>
       <button onClick={() => setTheme('light')}>Light</button>
       <button onClick={() => setTheme('dark')}>Dark</button>
-      <button onClick={() => setTheme('pink')}>Pink</button>
-      <button onClick={() => setTheme('papayawhip')}>Papayawhip</button>
       <GlobalStyles theme={{ type: theme }} />
       <Component {...pageProps} />
     </>
