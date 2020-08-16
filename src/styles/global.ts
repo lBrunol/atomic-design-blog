@@ -49,6 +49,11 @@ const GlobalStyles = createGlobalStyle`
       }
     }
     article {
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: -0.04px;
+      line-height: 1.5em;
+
       &:not(last-child) {
         margin-bottom: 3.2rem;
       }

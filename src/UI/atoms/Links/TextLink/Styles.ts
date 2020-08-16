@@ -8,7 +8,6 @@ export const A = styled.a`
   will-change: border-color;
   border-bottom: 2px solid transparent;
   transition: border-color 0.25s ease 0s;
-  display: inline-block;
 
   &:hover,
   &:focus,
