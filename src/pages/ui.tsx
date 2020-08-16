@@ -1,6 +1,7 @@
 import TextLink from '../UI/atoms/Links/TextLink/TextLink'
 import * as S from '../styles/util'
 import IconLink from 'UI/atoms/Links/IconLink/IconLink'
+import BrandHeader from 'UI/organisms/BrandHeader/BrandHeader'
 
 import GitSvg from '../images/git.svg'
 import YoutubeSvg from '../images/youtube.svg'
@@ -36,13 +37,16 @@ export default function UI() {
       <section>
         <article>
           <h1>Molecules</h1>
+          <S.spaceBlock />
           <hr />
         </article>
       </section>
       <section>
         <article>
           <h1>Organisms</h1>
-          <hr />
+          <S.spaceBlock>
+            <BrandHeader />
+          </S.spaceBlock>
         </article>
       </section>
     </>
