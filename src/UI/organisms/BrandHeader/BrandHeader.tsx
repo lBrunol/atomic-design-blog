@@ -1,7 +1,11 @@
 import * as S from './Styles'
 import Link from 'next/link'
 
-const BrandHeader = () => {
+type Props = {
+  titleColor: string
+}
+
+const BrandHeader = ({ titleColor }: Props) => {
   return (
     <Link href="/">
       <a>
@@ -9,7 +13,7 @@ const BrandHeader = () => {
           <S.BrandAvatar>
             <S.BrandAvatarImage src="/avatar.jpg" />
           </S.BrandAvatar>
-          <S.BrandTitle>Goku</S.BrandTitle>
+          <S.BrandTitle titleColor={titleColor}>Goku</S.BrandTitle>
         </S.BrandContainer>
       </a>
     </Link>
