@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Nav = styled.nav`
   display: flex;
+  align-items: center;
 
   > :not(last-child) {
     margin-right: 0.8rem;

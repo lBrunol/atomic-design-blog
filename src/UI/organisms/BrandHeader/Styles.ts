@@ -43,7 +43,7 @@ export const BrandTitle = styled.h1`
       ? 'rgba(15,15,15,0.95);'
       : 'var(--primary-color)'};
     display: inline-block;
-
+    margin-bottom: 0;
     @media (min-width: 450px) {
       font-size: 2.1rem;
     }

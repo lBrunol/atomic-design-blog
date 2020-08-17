@@ -2,10 +2,8 @@ import { AppProps } from 'next/app'
 import Head from 'next/head'
 
 import GlobalStyles from 'styles/global'
-import { useState } from 'react'
 
 function App({ Component, pageProps }: AppProps) {
-  const [theme, setTheme] = useState('light')
   return (
     <>
       <Head>
@@ -16,9 +14,7 @@ function App({ Component, pageProps }: AppProps) {
           rel="stylesheet"
         ></link>
       </Head>
-      <button onClick={() => setTheme('light')}>Light</button>
-      <button onClick={() => setTheme('dark')}>Dark</button>
-      <GlobalStyles theme={{ type: theme }} />
+      <GlobalStyles theme={{ type: 'light' }} />
       <Component {...pageProps} />
     </>
   )

@@ -7,8 +7,9 @@ const Introduction = () => {
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         velit erat, aliquet at velit sit amet, tempor pharetra lorem. Proin
-        molestie, ante vel mattis venenatis, lorem mi cursus neque, sed
-        condimentum leo felis ac eros
+        molestie, ante vel mattis venenatis,
+        <TextLink href="https://google.com"> lorem mi </TextLink> cursus neque,
+        sed condimentum leo felis ac eros
       </p>
       <p>
         Cras semper odio leo, sed sollicitudin lectus scelerisque at. Vestibulum
@@ -17,7 +18,8 @@ const Introduction = () => {
         sapien feugiat purus, laoreet ultrices sem lacus quis lectus
       </p>
       <p>
-        Cras semper odio leo, sed sollicitudin lectus scelerisque at. Vestibulum
+        Cras semper odio leo, sed sollicitudin{' '}
+        <TextLink href="https://google.com">lectus scelerisque at.</TextLink>
       </p>
     </article>
   )

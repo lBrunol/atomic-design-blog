@@ -1,5 +1,6 @@
 import * as S from './Styles'
 import Link from 'next/link'
+import ToggleButton from 'UI/atoms/Buttons/ToggleButton/ToggleButton'
 
 const Navigation = () => {
   return (
@@ -13,6 +14,7 @@ const Navigation = () => {
       <Link href="/">
         <a>lab</a>
       </Link>
+      <ToggleButton />
     </S.Nav>
   )
 }

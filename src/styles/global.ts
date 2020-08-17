@@ -42,6 +42,7 @@ const GlobalStyles = createGlobalStyle`
     }
     h1 {
       color: var(--primary-color);
+      margin-bottom: 2.4rem;
     }
     p {
       &:not(last-child) {
@@ -60,6 +61,14 @@ const GlobalStyles = createGlobalStyle`
       &:not(first-child) {
         margin-top: 3.2rem;
       }
+    }
+    button {
+      background: none;
+      border-width: 0px;
+      border-style: initial;
+      border-color: initial;
+      border-image: initial;
+      padding: 0px;
     }
   `}
 `
